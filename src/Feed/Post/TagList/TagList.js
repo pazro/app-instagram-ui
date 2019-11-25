@@ -5,8 +5,8 @@ class TagList extends Component {
     render() {
         return (
             <div className="TagList">
-                {this.props.tags.map((tag,i) => {
-                    return <div key={i} className="tag">
+                {this.props.tags.map((tag, index) => {
+                    return <div key={index} className="tag">
                         <a href="#">#{tag}</a>
                     </div>
                 })}
