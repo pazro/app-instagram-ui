@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "%20http://asafto.github.io/app-instagram-ui/static/css/main.ab69818e.chunk.css",
+    "main.js": "%20http://asafto.github.io/app-instagram-ui/static/js/main.2dbaa584.chunk.js",
+    "main.js.map": "%20http://asafto.github.io/app-instagram-ui/static/js/main.2dbaa584.chunk.js.map",
+    "runtime-main.js": "%20http://asafto.github.io/app-instagram-ui/static/js/runtime-main.cb38f079.js",
+    "runtime-main.js.map": "%20http://asafto.github.io/app-instagram-ui/static/js/runtime-main.cb38f079.js.map",
+    "static/js/2.4d7e05b4.chunk.js": "%20http://asafto.github.io/app-instagram-ui/static/js/2.4d7e05b4.chunk.js",
+    "static/js/2.4d7e05b4.chunk.js.map": "%20http://asafto.github.io/app-instagram-ui/static/js/2.4d7e05b4.chunk.js.map",
+    "index.html": "%20http://asafto.github.io/app-instagram-ui/index.html",
+    "precache-manifest.3afb7d93b8cafbb8f0f4a7e7e3071ff6.js": "%20http://asafto.github.io/app-instagram-ui/precache-manifest.3afb7d93b8cafbb8f0f4a7e7e3071ff6.js",
+    "service-worker.js": "%20http://asafto.github.io/app-instagram-ui/service-worker.js",
+    "static/css/main.ab69818e.chunk.css.map": "%20http://asafto.github.io/app-instagram-ui/static/css/main.ab69818e.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cb38f079.js",
+    "static/js/2.4d7e05b4.chunk.js",
+    "static/css/main.ab69818e.chunk.css",
+    "static/js/main.2dbaa584.chunk.js"
+  ]
+}
