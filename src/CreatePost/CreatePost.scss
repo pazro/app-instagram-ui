@@ -1,3 +1,87 @@
 .create-post {
   color: antiquewhite;
 }
+
+.form-title {
+  margin-top: 15px;
+  margin-left: -20px;
+  display: block;
+}
+
+//.form-control-image {
+//   display: none;
+//}
+
+.upload-btn {
+  background-color: antiquewhite;
+  color: #6e426b;
+}
+
+.form-control {
+  background-color: antiquewhite;
+  color: #6e426b;
+}
+
+.upload-btn:hover {
+  background-color: antiquewhite;
+  color: #6e426b;
+  box-shadow: 0 12px 16px 0 rgba(255,255,250,0.24), 0 17px 50px 0 rgba(255,255,250,0.19);
+}
+
+.upload-btn:active {
+  background-color: hotpink;
+  color: antiquewhite;
+}
+
+.upload-icon {
+  color: #6e426b;
+  margin-right: 15px;
+}
+
+.tags-input {
+  background-color: antiquewhite;
+  color: #6e426b;
+}
+
+.share-btn {
+  margin-top: 30px;
+  background-color: antiquewhite;
+  color: #6e426b;
+}
+
+.share-btn:hover {
+  background-color: antiquewhite;
+  color: #6e426b;
+  box-shadow: 0 12px 16px 0 rgba(255,255,250,0.24), 0 17px 50px 0 rgba(255,255,250,0.19);
+}
+
+.share-icon {
+  color: #6e426b;
+  margin-right: 15px;
+}
+
+.tags-input {
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.react-tagsinput-input {
+  box-shadow: none;
+  border: 0;
+  padding: 0;
+  margin: 7px;
+}
+
+.react-tagsinput-tag {
+  display: inline-block;
+  color: antiquewhite;
+  background: #6e426b;
+  margin: 5px;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+Button:focus {
+  outline: none;
+}
