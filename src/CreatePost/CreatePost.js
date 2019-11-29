@@ -36,11 +36,17 @@ class CreatePost extends Component {
                         <h2 className="form-title">Create Post:</h2>
                         <BForm.Group controlId="formBasicFile">
                             <BForm.Label>Load Image:</BForm.Label>
-                            <Field type="file" name="image" className="form-control-image"/>
-                            <br/><Button variant="primary" className="upload-btn">
-                                <FaFileImage className="upload-icon"/>
-                                Select your image...
-                            </Button>
+                            <Field type="file" name="image" id="image" className="form-control-image"/>
+                            <label htmlFor="image" className="upload-btn">
+                                <span>
+                                    <FaFileImage className="upload-icon"/>
+                                    Select your image...
+                                </span>
+                            </label>
+                            {/*<br/><Button variant="primary" className="upload-btn">*/}
+                            {/*    <FaFileImage className="upload-icon"/>*/}
+                            {/*    Select your image...*/}
+                            {/*</Button>*/}
                         </BForm.Group>
                         <BForm.Group controlId="formBasicEmail">
                             <BForm.Label>Post Title:</BForm.Label>

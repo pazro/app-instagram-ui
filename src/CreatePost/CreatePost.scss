@@ -12,14 +12,28 @@
 //   display: none;
 //}
 
-.upload-btn {
-  background-color: antiquewhite;
-  color: #6e426b;
-}
+
 
 .form-control {
   background-color: antiquewhite;
   color: #6e426b;
+}
+
+.upload-btn {
+  background-color: antiquewhite;
+  color: #6e426b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: 40%;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 1rem 50px;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
 }
 
 .upload-btn:hover {
@@ -29,8 +43,15 @@
 }
 
 .upload-btn:active {
-  background-color: hotpink;
+  //background-color: hotpink;
   color: antiquewhite;
+  outline: none;
+}
+
+[type="file"] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
 }
 
 .upload-icon {
@@ -47,6 +68,8 @@
   margin-top: 30px;
   background-color: antiquewhite;
   color: #6e426b;
+  border: none;
+  outline: none;
 }
 
 .share-btn:hover {
