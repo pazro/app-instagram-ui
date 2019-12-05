@@ -84,7 +84,7 @@ class CreatePost extends Component {
                                     Upload your post...
                                 </Button>
                             </Form>
-                    }}  >
+                    }}>
                 </Formik>
             </div>
 

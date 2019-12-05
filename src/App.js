@@ -6,10 +6,11 @@ import Profile from "./Profile/Profile";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import CreatePost from "./CreatePost/CreatePost";
+import Register from './Register/Register';
+import Login from './Login/Login';
 
 function App() {
   return (
@@ -23,6 +24,12 @@ function App() {
               </Route>
               <Route path="/post/create">
                 <CreatePost />
+              </Route>
+              <Route path="/register">
+                <Register />
+              </Route>
+              <Route path="/login">
+                <Login />
               </Route>
               <Route path="/">
                 <Feed />
