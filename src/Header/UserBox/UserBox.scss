@@ -1,0 +1,17 @@
+.user-actions {
+  a {
+    margin: 5px;
+    color: #6e426b;
+    transition: color 200ms;
+
+    &:hover {
+      color: #bf35bd;
+      text-decoration: none;
+    }
+
+    &:focus {
+      color: #bf35bd;
+      text-decoration: none;
+    }
+  }
+}

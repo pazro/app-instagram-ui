@@ -19,7 +19,7 @@ class CreatePost extends Component {
     handleTagsChange(tags) {
         this.setState({
             tags: tags
-        })
+        });
     }
 
     convertToFormData(values) {
@@ -27,7 +27,7 @@ class CreatePost extends Component {
         for (let key in values) {
             Array.isArray(values[key])
                 ? values[key].forEach(value => data.append(key + '[]', value))
-                : data.append(key, values[key]) ;
+                : data.append(key, values[key]);
         }
         return data;
     }
@@ -45,18 +45,18 @@ class CreatePost extends Component {
     render() {
         return (
             <div className="create-post">
-                {/*<h2 className="form-title">Create Post:</h2>*/}
+                <h2 className="form-title">Create Post:</h2>
                 <Formik initialValues={{image: '', title: '', tags: []}}
                         validationSchema={postModel}
                         onSubmit={this.submit.bind(this)}
                         render={({setFieldValue}) => {
                             return <Form className="col-xs-12 col-sm-6">
-                                <h2 className="form-title">Create Post:</h2>
+                                {/*<h2 className="form-title">Create Post:</h2>*/}
                                 <BForm.Group controlId="formBasicFile">
                                     <BForm.Label>Load Image:</BForm.Label>
-                                    <input type="file" name="image" id="image" className="form-control-image" onChange={(event => {
+                                    <input type="file" name="image" id="image" className="form-control-image" onChange={(event) => {
                                         setFieldValue('image', event.currentTarget.files[0]);
-                                    })}/>
+                                    }} />
                                     <label htmlFor="image" className="upload-btn">
                                 <span>
                                     <FaFileImage className="upload-icon"/>
@@ -73,11 +73,14 @@ class CreatePost extends Component {
                                     <BForm.Label>Post Tags:</BForm.Label>
                                     <TagsInput
                                         value={this.state.tags}
-                                        onChange={this.handleTagsChange.bind(this)}
+                                        onChange={(tags) => {
+                                            this.handleTagsChange(tags);
+                                            setFieldValue('tags', tags);
+                                        }}
                                         className="tags-input"
                                     />
+                                    <ErrorMessage className="alert alert-danger mt-2" name="tags" component="div" />
                                     <FaRegLightbulb/><span>Press Enter for each tag</span>
-                                    {/*/>*/}
                                 </BForm.Group>
                                 <Button variant="primary" type="submit" className="share-btn">
                                     <FaCloudUploadAlt className="share-icon" />

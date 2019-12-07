@@ -3,6 +3,7 @@ import Moment from 'react-moment';
 import "./Post.scss";
 import { FaUserCircle, FaRegHeart, FaRegComment, FaRegShareSquare, FaRegBookmark } from 'react-icons/all';
 import TagList from "./TagList/TagList";
+import config from '../../config';
 
 
 class Post extends Component {
@@ -20,7 +21,7 @@ class Post extends Component {
                     </div>
                 </div>
 
-                <img src={this.props.image} alt="image" className="post-image" />
+                <img src={config.apiUrl + '/' + this.props.image} alt="image" className="post-image" />
                 <div className="post-reactions">
                     <div className="like-comment-share">
                         <button className="action-button">

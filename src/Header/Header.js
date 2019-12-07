@@ -3,8 +3,10 @@ import "./Header.scss";
 import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import { FaUserCircle } from 'react-icons/all';
+import UserBox from "./UserBox/UserBox";
 
 class Header extends Component {
+
     render() {
         return (
             <Navbar bg="light" expand="lg" className="header">
@@ -21,10 +23,7 @@ class Header extends Component {
                             <div className="user-avatar">
                                 <FaUserCircle className="user-icon" />
                             </div>
-                            <div className="user-actions">
-                                <Link to="/register">Register</Link>
-                                <Link to="/login">Login</Link>
-                            </div>
+                           <UserBox  />
                         </div>
                     </div>
                 </Navbar.Collapse>

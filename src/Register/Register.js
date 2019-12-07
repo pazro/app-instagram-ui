@@ -3,6 +3,7 @@ import { ErrorMessage, Field, Form, Formik } from 'formik';
 import registerModel from '../models/register.model';
 import { Button } from 'react-bootstrap';
 import { withRouter } from 'react-router-dom';
+import './Register.scss';
 
 class Register extends Component {
 
@@ -19,8 +20,8 @@ class Register extends Component {
 
     render() {
         return (
-            <div>
-                <h2>Registration</h2>
+            <div className="register-form">
+                <h2 className="form-title">Registration</h2>
                 <hr />
                 <Formik initialValues={{name: '', username: '', password: '', birthDate: new Date(), gender: 'm', about: ''}}
                         validationSchema={registerModel}
@@ -60,7 +61,7 @@ class Register extends Component {
                             <ErrorMessage className="alert alert-danger mt-2" name="about" component="div" />
                         </div>
                         <div className="row form-group d-flex justify-content-end">
-                            <Button type="submit">Register</Button>
+                            <Button type="submit" className="register-btn">Register</Button>
                         </div>
                     </Form>
                 </Formik>

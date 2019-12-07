@@ -4,6 +4,7 @@ import { ErrorMessage, Field, Form, Formik } from 'formik';
 import loginModel from '../models/login.model';
 import { Button } from 'react-bootstrap';
 import { withRouter } from 'react-router-dom';
+import './Login.scss';
 
 class Login extends Component {
 
@@ -19,6 +20,7 @@ class Login extends Component {
         fetch('http://localhost:4000/api/users/login', {
             method: 'POST',
             body: JSON.stringify(values),
+            credentials: "include",
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -35,8 +37,8 @@ class Login extends Component {
 
     render() {
         return (
-            <div>
-                <h2>Login</h2>
+            <div className="login-form">
+                <h2 className="form-title">Login</h2>
                 <hr />
                 <Formik initialValues={{username: '', password: ''}}
                         validationSchema={loginModel}
@@ -54,7 +56,7 @@ class Login extends Component {
                             <ErrorMessage className="alert alert-danger mt-2" name="password" component="div" />
                         </div>
                         <div className="row form-group d-flex justify-content-end">
-                            <Button type="submit">Login</Button>
+                            <Button type="submit" className="login-btn">Login</Button>
                         </div>
                     </Form>
                 </Formik>
