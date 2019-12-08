@@ -36,6 +36,7 @@ class CreatePost extends Component {
         const formData = this.convertToFormData(values);
         fetch(config.apiUrl + '/api/posts', {
             method: 'POST',
+            credentials: "include",
             body: formData
         }).then(res => res.json())
             .then(post => console.log(post))
