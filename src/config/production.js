@@ -1,3 +1,3 @@
 export default {
-    apiUrl: 'https://app-instagram-api.herokuapp.com/'
+    apiUrl: 'https://app-instagram-api.herokuapp.com'
 };
