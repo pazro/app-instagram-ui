@@ -14,3 +14,10 @@
     box-shadow: 0 12px 16px 0 rgba(255,255,250,0.24), 0 17px 50px 0 rgba(255,255,250,0.19);
   }
 }
+
+.form-control {
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}

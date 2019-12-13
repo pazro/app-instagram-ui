@@ -46,13 +46,12 @@ class CreatePost extends Component {
     render() {
         return (
             <div className="create-post">
-                <h2 className="form-title">Create Post:</h2>
                 <Formik initialValues={{image: '', title: '', tags: []}}
                         validationSchema={postModel}
                         onSubmit={this.submit.bind(this)}
                         render={({setFieldValue}) => {
                             return <Form className="col-xs-12 col-sm-6">
-                                {/*<h2 className="form-title">Create Post:</h2>*/}
+                                <h2 className="form-title">Create Post:</h2>
                                 <BForm.Group controlId="formBasicFile">
                                     <BForm.Label>Load Image:</BForm.Label>
                                     <input type="file" name="image" id="image" className="form-control-image" onChange={(event) => {
